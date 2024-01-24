@@ -18,14 +18,16 @@ body {
 }
 
 #start-btn {
-  font-size: 1rem;
-  padding: 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  padding: 15px 30px;
   margin-bottom: 20px;
   background-color: #4CAF50;
-  color: #fff;
+  color: #FEF2BF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #start-btn:hover {

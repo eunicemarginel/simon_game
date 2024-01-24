@@ -12,8 +12,20 @@ $("#start-btn").click(function() {
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
+    $(this).fadeOut(); // Hide the button when the game starts
+  } else {
+    startOver();
+    $("#start-btn").fadeIn(); // Show the button when the game is over
   }
 });
+
+function startOver() {
+  level = 0;
+  gamePattern = [];
+  userClickedPattern = [];
+  started = false;
+  $("#level-title").text("Press A Key to Start");
+}
 
 $(".btn").click(function() {
 
