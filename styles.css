@@ -17,6 +17,21 @@ body {
 
 }
 
+#start-btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-btn:hover {
+  background-color: #45a049;
+}
+
 .btn {
   margin: 25px;
   display: inline-block;
