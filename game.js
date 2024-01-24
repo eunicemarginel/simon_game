@@ -15,17 +15,9 @@ $("#start-btn").click(function() {
     $(this).fadeOut(); // Hide the button when the game starts
   } else {
     startOver();
-    $("#start-btn").fadeIn(); // Show the button when the game is over
+    $("#start-btn").fadeIn();
   }
 });
-
-function startOver() {
-  level = 0;
-  gamePattern = [];
-  userClickedPattern = [];
-  started = false;
-  $("#level-title").text("Press A Key to Start");
-}
 
 $(".btn").click(function() {
 
@@ -49,13 +41,14 @@ function checkAnswer(currentLevel) {
     } else {
       playSound("wrong");
       $("body").addClass("game-over");
-      $("#level-title").text("Game Over, Press Any Key to Restart");
+      $("#level-title").text("Game Over, Play Again!");
 
       setTimeout(function () {
         $("body").removeClass("game-over");
       }, 200);
 
       startOver();
+      $("#start-btn").fadeIn(); // Show the button when the game is over
     }
 }
 
