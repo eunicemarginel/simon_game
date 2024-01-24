@@ -15,7 +15,6 @@ $("#start-btn").click(function() {
     $(this).fadeOut(); // Hide the button when the game starts
   } else {
     startOver();
-    $("#start-btn").fadeIn();
   }
 });
 
